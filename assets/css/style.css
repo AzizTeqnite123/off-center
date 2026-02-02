@@ -366,6 +366,7 @@ img {
     background-image: url(../img/banner-heading-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    animation: bounce 3s ease-in-out infinite;
 }
 
 .bannerSocIcons {
@@ -378,6 +379,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    animation: bounce 3s ease-in-out infinite;
 }
 
 .bannerSocIcons ul li a {
@@ -481,11 +483,19 @@ img {
 
 .serviceMnAllBx {
     padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease .3s;
 }
 
-.serviceMnAllBx img {
+.serviceMnAllBxImg img {
     width: 100px;
     object-fit: contain;
+}
+
+.serviceMnAllBxCont {
+    margin-top: 30px;
+    transition: all ease .3s;
 }
 
 .serviceMnAllBx h4 {
@@ -495,11 +505,10 @@ img {
     line-height: 1;
     letter-spacing: 0px;
     text-transform: uppercase;
-    margin-top: 20px;
 }
 
 .serviceMnAllBx :is(ul, ol) {
-    margin-top: 30px;
+    margin-top: 40px;
     padding-left: 20px;
 }
 
@@ -688,6 +697,8 @@ img {
 
 .letBpARTnerContet {
     max-width: 520px;
+    padding-top: 190px;
+    padding-bottom: 80px;
 }
 
 .letBpARTnerContet .headingH2 {
@@ -861,28 +872,28 @@ img {
     width: 55px;
     position: absolute;
     top: 10px;
-    left: -80px;
+    left: -80px;    animation: bounce 3s ease-in-out infinite;
 }
 
 .prom-icon-2 {
     width: 50px;
     position: absolute;
     top: 10px;
-    right: -80px;
+    right: -80px;    animation: bounce 3s ease-in-out infinite;
 }
 
 .prom-icon-3 {
     width: 40px;
     position: absolute;
     bottom: -20px;
-    left: -120px;
+    left: -120px;    animation: bounce 3s ease-in-out infinite;
 }
 
 .prom-icon-4 {
     width: 40px;
     position: absolute;
     bottom: -20px;
-    right: -120px;
+    right: -120px;    animation: bounce 3s ease-in-out infinite;
 }
 
 /* PROMOTION BANNER */
@@ -962,7 +973,7 @@ img {
 
 /* MAIN FOOTER */
 
-/*  */
+/* Recent Projects */
 
 .recentPrOJECTs {
     margin: 100px 0;
@@ -1023,4 +1034,18 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Recent Projects */
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }

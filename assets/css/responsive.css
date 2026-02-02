@@ -1,0 +1,9 @@
+@media (min-width : 1600px) {
+    .bannerMain {
+        min-height: 100vh;
+    }
+
+    .marketingSuccess {
+         min-height: 120vh;
+    }
+}
