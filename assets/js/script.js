@@ -52,7 +52,7 @@ const carousel = document.getElementById('main-carousel');
             const allItems = document.querySelectorAll('.slider-item-circle');
             const n = allItems.length;
             const itemWidth = carousel.offsetWidth;
-            const gap = 15; 
+            const gap = 20; 
             const radius = ((itemWidth + gap) * n) / (2 * Math.PI);
 
             allItems.forEach((item, i) => {
@@ -67,7 +67,7 @@ const carousel = document.getElementById('main-carousel');
             if (loop) loop.kill();
             loop = gsap.to(".slider-carousel-circle", {
                 rotationY: 360,
-                duration: 20 + (n * 1.5),
+                duration: 40 + (n * 1.5),
                 repeat: -1,
                 ease: "none"
             });

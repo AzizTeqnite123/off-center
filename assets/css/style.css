@@ -953,6 +953,20 @@ img {
     height: 100%;
     overflow: hidden;
     perspective: 20000px;
+    position: relative;
+}
+
+.project-section::after {
+    content: '';
+    background-image: url(../img/project-section-slider-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateY(-50%);
 }
 
 .slider-stage {
@@ -977,7 +991,7 @@ img {
 .slider-item-circle {
     position: absolute;
     inset: 0;
-    border-radius: 12px;
+    border-radius: 10px;
     background: #111;
     border: 1px solid rgba(255, 255, 255, 0.15);
     overflow: hidden;
