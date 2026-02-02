@@ -950,32 +950,26 @@ img {
 
 .project-section {
     width: 100%;
-    min-height: 50vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
     overflow: hidden;
-    position: relative;
-    perspective: 7000px;
-    font-family: sans-serif;
+    perspective: 20000px;
 }
 
 .slider-stage {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     transform-style: preserve-3d;
     transform: rotateX(-10deg);
+    min-height: 700px;
+    padding-top: 175px;
 }
 
 .slider-carousel-circle {
     position: relative;
-    width: 25vw;
-    min-width: 220px;
-    height: 18vw;
-    min-height: 150px;
+    width: 450px;
+    height: 300px;
     transform-style: preserve-3d;
     will-change: transform;
 }
@@ -995,16 +989,4 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-@media (max-width: 768px) {
-    .slider-carousel-circle {
-        width: 55vw;
-        height: 38vw;
-    }
-
-    .project-section {
-        perspective: 1500px;
-        padding: 25vw 0;
-    }
 }
